@@ -14,6 +14,7 @@
       <div class="logo">
         <img src="./img/58429064a6515b1e0ad75aba.png" alt="logo" />
       </div>
+
       <div class="form-box">
         <div class="button-box">
           <div id="btn"></div>
@@ -29,7 +30,11 @@
             Registrácia
           </button>
         </div>
+
         <form id="Login" class="input-group">
+          <div class="nadpis">
+            <h1>Prihlásenie do služby Orange TV</h1>
+          </div>
           <div class="input-box">
             <input
               type="text"
@@ -49,12 +54,16 @@
             />
             <img src="./img/eye-close.png" id="eyeicon" />
           </div>
+          <label for="checkbox">Zapamätať</label>
+          <input type="checkbox" class="check-box" id="checkbox" />
 
-          <input type="checkbox" class="check-box" />
-          <span>Zapamätať</span>
           <button type="submit" class="submit-btn">Prihlásiť sa</button>
         </form>
+
         <form id="Register" class="input-group">
+          <div class="nadpis">
+            <h1>Registrácia do služby Orange TV</h1>
+          </div>
           <div class="input-box">
             <input
               type="text"
@@ -70,7 +79,7 @@
             <input
               type="text"
               class="input-field"
-              placeholder="Meno/Prezívka"
+              placeholder="Meno/Prezývka"
               required
               oninvalid="this.setCustomValidity('Prosím, zadajte meno alebo prezívku.')"
               oninput="this.setCustomValidity('')"
@@ -111,8 +120,8 @@
           </div>
 
           <div class="input-box"></div>
-          <input type="checkbox" class="check-box" />
-          <span>Súhlasím s podmienkami</span>
+          <label for="checkbox1">Súhlasím s podmienkami</label>
+          <input type="checkbox" class="check-box" id="checkbox1" />
           <button type="submit" class="submit-btn">Registrovať</button>
         </form>
       </div>

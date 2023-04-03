@@ -2,9 +2,22 @@
 body {
   background: url(../img/mountains-190055.jpg) no-repeat;
   background-size: cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.nadpis {
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.3rem;
+  color: #ff7900;
+  text-align: center;
+  margin-top: -20%;
+  font-family: "Poppins", sans-serif;
 }
 .logo {
-  width: 24.05rem;
+  width: 25.05rem;
   height: 10rem;
   margin: 0 auto;
 }
@@ -13,18 +26,18 @@ body {
   height: auto;
 }
 .form-box {
-  width: 23.05rem;
+  width: 22.85rem;
   height: 35rem;
   position: relative;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
   background: #fff;
   padding: 5px;
   overflow: hidden;
   border-radius: 0.625rem;
 }
 .button-box {
-  width: 14.375rem;
+  width: 15.275rem;
   margin: 2.1875rem auto;
   position: relative;
   box-shadow: 0 0 1.25rem 0.5625rem #ff61241f;
@@ -103,12 +116,13 @@ body {
   color: #777;
   cursor: pointer;
 }
-span {
+label {
   color: #ff7900;
   font-size: 1rem;
   bottom: 4.0625rem;
   left: 1.25rem;
   position: absolute;
+  cursor: pointer;
 }
 #Login {
   left: 3.125rem;
@@ -116,7 +130,11 @@ span {
 #Register {
   left: 28.125rem;
 }
-
+@media screen and (max-width: 1500px) {
+  .form-box {
+    margin-top: 10%;
+  }
+}
 @media screen and (max-width: 800px) {
   .logo {
     height: 11rem;
@@ -131,7 +149,11 @@ span {
   .logo {
     height: 15rem;
   }
+  .form-box {
+    margin-top: 0%;
+  }
 }
+
 @media screen and (max-width: 400px) {
   .logo {
     height: 17rem;
@@ -139,7 +161,7 @@ span {
 }
 @media screen and (max-width: 375px) {
   .form-box {
-    width: 24.05rem;
-    height: 30rem;
+    width: 24.45rem;
+    height: 25rem;
   }
 }
