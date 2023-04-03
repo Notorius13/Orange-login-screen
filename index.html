@@ -30,63 +30,87 @@
           </button>
         </div>
         <form id="Login" class="input-group">
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Meno/E-mail"
-            required
-          />
-          <input
-            type="password"
-            class="input-field"
-            placeholder="Heslo"
-            required
-          />
-          <input type="checkbox" class="check-box" /> <span>Zapamätať</span>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Meno/E-mail"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              class="input-field"
+              id="password"
+              placeholder="Heslo"
+              required
+            />
+            <img src="./img/eye-close.png" id="eyeicon" />
+          </div>
+
+          <input type="checkbox" class="check-box" />
+          <span>Zapamätať</span>
           <button type="submit" class="submit-btn">Prihlásiť sa</button>
         </form>
         <form id="Register" class="input-group">
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Párovací kód"
-            required
-            oninvalid="this.setCustomValidity('Prosím, zadajte platný párovací kód.')"
-            oninput="this.setCustomValidity('')"
-          />
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Párovací kód"
+              required
+              oninvalid="this.setCustomValidity('Prosím, zadajte platný párovací kód.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
 
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Meno/Prezívka"
-            required
-            oninvalid="this.setCustomValidity('Prosím, zadajte meno alebo prezívku.')"
-            oninput="this.setCustomValidity('')"
-          />
-          <input
-            type="email"
-            class="input-field"
-            placeholder="E-mail"
-            required
-            oninvalid="this.setCustomValidity('Prosím, zadajte E-mail.')"
-            oninput="this.setCustomValidity('')"
-          />
-          <input
-            type="password"
-            class="input-field"
-            placeholder="Heslo"
-            required
-            oninvalid="this.setCustomValidity('Prosím, zadajte heslo.')"
-            oninput="this.setCustomValidity('')"
-          />
-          <input
-            type="password"
-            class="input-field"
-            placeholder="Zopakovať heslo"
-            required
-            oninvalid="this.setCustomValidity('Prosím, zopakujte heslo.')"
-            oninput="this.setCustomValidity('')"
-          />
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Meno/Prezívka"
+              required
+              oninvalid="this.setCustomValidity('Prosím, zadajte meno alebo prezívku.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="input-box">
+            <input
+              type="email"
+              class="input-field"
+              placeholder="E-mail"
+              required
+              oninvalid="this.setCustomValidity('Prosím, zadajte E-mail.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              class="input-field"
+              id="password1"
+              placeholder="Heslo"
+              required
+            />
+            <img src="./img/eye-close.png" id="eyeicon1" />
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              class="input-field"
+              id="password2"
+              placeholder="Zopakovať heslo"
+              required
+            />
+            <img src="./img/eye-close.png" id="eyeicon2" />
+          </div>
+
+          <div class="input-box"></div>
           <input type="checkbox" class="check-box" />
           <span>Súhlasím s podmienkami</span>
           <button type="submit" class="submit-btn">Registrovať</button>
