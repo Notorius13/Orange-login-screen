@@ -1,0 +1,138 @@
+@import url(./btn.scss);
+body {
+  background: linear-gradient(-45deg, #ee7752, #ff7900, #ffbf6c, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 80vh;
+}
+.logo {
+  width: 24.05rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+.logo img {
+  width: 400px;
+  height: auto;
+}
+.form-box {
+  width: 23.05rem;
+  height: 35rem;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10%;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 0.625rem;
+}
+.button-box {
+  width: 14.375rem;
+  margin: 2.1875rem auto;
+  position: relative;
+  box-shadow: 0 0 1.25rem 0.5625rem #ff61241f;
+  border-radius: 1.875rem;
+}
+.toggle-btn {
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #ffbf6c, #ff7900);
+  border-radius: 1.875rem;
+  transition: 0.5s;
+}
+.input-group {
+  top: 11.25rem;
+  position: absolute;
+  width: 17.5rem;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 0.625rem 0;
+  margin: 0.3125rem 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn {
+  width: 100%;
+  padding: 0.625rem 0;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ffbf6c, #ff7900);
+  border: 0;
+  outline: none;
+  border-radius: 1.875rem;
+}
+.check-box {
+  margin: 0.625rem 0 1.875rem 0;
+  font-size: 0.875rem;
+  color: #777;
+  cursor: pointer;
+}
+span {
+  color: #ff7900;
+  font-size: 1rem;
+  bottom: 4.0625rem;
+  left: 1.25rem;
+  position: absolute;
+}
+#Login {
+  left: 3.125rem;
+}
+#Register {
+  left: 28.125rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    height: 11rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 13rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo {
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo {
+    height: 17rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form-box {
+    width: 24.05rem;
+    height: 30rem;
+  }
+}

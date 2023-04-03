@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Orange TV</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+      <div class="logo">
+        <img src="./img/58429064a6515b1e0ad75aba.png" alt="logo" />
+      </div>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Prihlásenie
+          </button>
+          <button
+            type="button"
+            class="toggle-btn"
+            class="animated-button1"
+            onclick="register()"
+          >
+            Registrácia
+          </button>
+        </div>
+        <form id="Login" class="input-group">
+          <input type="text" class="input-field" placeholder="Meno" required />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Heslo"
+            required
+          />
+          <input type="checkbox" class="check-box" /> <span>Zapamätať</span>
+          <button type="submit" class="submit-btn">Prihlásiť sa</button>
+        </form>
+        <form id="Register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Párovací kód"
+            required
+            oninvalid="this.setCustomValidity('Prosím, zadajte platný párovací kód.')"
+            oninput="this.setCustomValidity('')"
+          />
+
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Meno/Prezívka"
+            required
+            oninvalid="this.setCustomValidity('Prosím, zadajte meno alebo prezívku.')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="E-mail"
+            required
+            oninvalid="this.setCustomValidity('Prosím, zadajte E-mail.')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Heslo"
+            required
+            oninvalid="this.setCustomValidity('Prosím, zadajte heslo.')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Zopakovať heslo"
+            required
+            oninvalid="this.setCustomValidity('Prosím, zopakujte heslo.')"
+            oninput="this.setCustomValidity('')"
+          />
+          <input type="checkbox" class="check-box" />
+          <span>Súhlasím s podmienkami</span>
+          <button type="submit" class="submit-btn">Registrovať</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
